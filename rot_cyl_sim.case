@@ -1,0 +1,26 @@
+&NEKO_CASE
+mesh_file= 'rot_cyl.nmsh'
+fluid_scheme='pnpn'
+lx = 8
+source_term='user_vector'
+initial_condition = 'user'
+/
+&NEKO_PARAMETERS
+dt = 2d-5
+T_end = 300
+nsamples = 30000
+dealias=.true.
+uinf= 1.0,0.0,0.0
+output_bdry = .false.
+rho = 1
+Re = 30000
+abstol_prs = 1d-5
+abstol_vel = 1d-8
+pc_vel = 'jacobi'
+pc_prs = 'hsmg'
+proj_prs_dim = 30
+proj_vel_dim = 0
+bc_labels='v','o','sym','w','on','on','v'
+fluid_inflow="user"
+jlimit = '20:00:00'
+/
