@@ -11,7 +11,7 @@ git clone https://github.com/ExtremeFLOW/flettner_rotor
 gzip -d rot_cyl.nmsh.gz
 ```
 
-Then, the executable needs to be compiled, for this part Neko needs to have been installed with the appropriate backend support.
+Then, the executable needs to be compiled, for this part Neko needs to have been installed with the appropriate backend support. This can either be done thorugh spack, or manually. To compile it from source one needs to first clone the repo.
 ```
 git clone -b v0.3.1 https://github.com/ExtremeFLOW/neko.git
 cd neko
