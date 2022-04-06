@@ -21,7 +21,7 @@ For CUDA:
 ```
 For HIP:
 ```
-./configure --prefix=/path/to/neko_install --with-cuda=/path/to/cuda 
+./configure --prefix=/path/to/neko_install --with-hip=/path/to/hip
 ```
 For CPU:
 ```
