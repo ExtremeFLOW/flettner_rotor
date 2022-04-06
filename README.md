@@ -49,7 +49,7 @@ Please note that the case is quite large and requires around 2TB of RAM. The sca
 ```
 mpirun ./run.sh rot_cyl_scale.case
 ```
-If using srun instead, please change the comented line in `run.sh/run_power.sh`.
+If using srun instead, please change the commented line in `run.sh/run_power.sh`.
 Power measruements for the GPUs are made with
 ```
 mpirun ./run_power.sh rot_cyl_scale.case
