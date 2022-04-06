@@ -5,8 +5,11 @@ This repository contains all the parts necessary to run the Flettner rotor case 
 It contains two different case files, one for the production run and one for the scaling and power measruements.
 
 # Installation
-First, the mesh needs to be decompressed 
-```gzip -d rot_cyl.nmsh.gz```
+First, we clone this repo and decompress the mesh
+```
+git clone https://github.com/ExtremeFLOW/flettner_rotor
+gzip -d rot_cyl.nmsh.gz
+```
 
 Then, the executable needs to be compiled, for this part Neko needs to have been installed with the appropriate backend support.
 ```
@@ -53,11 +56,11 @@ mpirun ./run_power.sh rot_cyl_scale.case
 ```
 For AMD, switch nvidia-smi to rocm-smi in `run_power.sh`.
 
-To make the simulation run, you can run it according to:
+To make recreate the simulation, you can run it according to:
 ```
 mpirun ./run.sh rot_cyl_sim.case
 ```
-
+Please observe this will take considerable amounts of time, currently we write a restart file after 20h.
 
 
 
