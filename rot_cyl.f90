@@ -986,7 +986,7 @@ module user
   real(kind=rp), parameter :: SMTHY01 = 0.68_rp          ! 0.34
   real(kind=rp), parameter :: SMTHZ01 = 0.3_rp         
   real(kind=rp), parameter :: ROTA01  = 0.0_rp         
-  integer, parameter :: NMODE01 = 16
+  integer, parameter :: NMODE01 = 40
   real(kind=rp), parameter :: TDT01   = 0.14_rp
   integer, parameter :: nline = 1
   logical, parameter :: LEXT01 = .false.
